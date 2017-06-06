@@ -1,6 +1,24 @@
 #include <iostream>
 using namespace std;
 
+/*
+ * Full Specs:
+ https://fgamedia.org/faculty/anand/home/challenges/Halloween-2016-Challenge.v2.pdf
+ * Find number of total possible brews, given 25 ingredients. Temperature of 
+ * final brew is 25˚C.
+ *
+ * Exceptions for temperatures:
+ * If the brew is at 8˚C and exactly 5 ingredients have been added, add 1 more
+ * ingredient before raising the temperature to 9˚C.
+ * If the brew is at 11˚C and exactly 3 ingredients have been added, add 2 more
+ * ingredients before raising the temperature to 12˚C.
+ * If the brew is at 15˚C and 14 ingredients have been added, do not add another
+ * ingredient until bringing up the temperature to 17˚C.
+ * If the brew is at 21˚C and 22 ingredients have been added, do not add another
+ * ingredient until bringing up the temperature to 22˚C.
+ *
+ */
+ 
 int main()
 {
    int const MAX_TEMP = 26;
